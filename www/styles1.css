@@ -1,0 +1,41 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#0f172a
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d3d3d; 
+    border-radius:0.75rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3d3d3d; 
+  }
+
+  textarea{
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #3d3d3d; 
+        border-radius:0.75rem;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3d3d3d; 
+      }
+  }

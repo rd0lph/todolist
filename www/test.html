@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body class="w-full h-screen">
+    <div class="w-full h-screen bg-black/50 flex items-center justify-center">
+        <form id="forms" class="flex flex-col bg-white p-3 w-[90vw] rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]">
+            <div class="flex flex-col">
+                <p class="font-semibold text-3xl">Editing Task</p>
+                <section class="w-full border-solid border-black border-2 mt-1"></section>
+            </div>
+            <div class="flex items-center w-full p-2">
+              <label for="title" class="font-semibold">Task Title
+                <input type="text" id="title" name="title" class="p-2 border-b-2 border-gray-500 focus:outline-none w-[90%] shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]" placeholder="Enter Your Task Here . . ." required>
+              </label>
+            </div>
+            <section class="border-b-4 border-[#e7e7e7] w-full my-6 rounded-md"></section>
+            <div class="flex items-center w-full p-2">
+              <label for="desc" class="font-semibold">Task Description
+                <textarea id="desc" name="desc" class="p-2 border-b-2 border-gray-500 focus:outline-none w-[90%] resize-none rounded-md shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]" rows="5" cols="40" placeholder="Enter Your Description Here . . ." required></textarea>
+              </label>
+            </div>
+            <section class="border-b-4 border-[#e7e7e7] w-full my-6 rounded-md"></section>
+            <div class="flex items-center w-full p-2">
+              <label for="date" class="font-semibold">Date
+                <input type="date" id="date" name="date" class="p-2 border-b-2 border-gray-500 focus:outline-none w-[90%] shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]" required>
+              </label>
+            </div>
+            <section class="border-b-4 border-[#e7e7e7] w-full my-6 rounded-md"></section>
+            <button type="submit" class="bg-gradient-to-r from-blue-600 to-green-400 text-white font-bold rounded-md">Edit</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+  <title>🦆Task Manager</title>
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  .montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+</style>
+
+<body class="bg-gradient-to-tr from-slate-900 from-50% to-blue-950 to-90% h-full w-full flex flex-col items-center justify-center">
+  <div>
+    <div class="bg-gradient-to-r from-blue-700 from-30% to-blue-500 t0-40% p-6 rounded-xl flex flex-row items-center mt-10">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="fill-white h-20 pr-4"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+        <path xmlns="http://www.w3.org/2000/svg" d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+      <p class="text-3xl text-white montserrat font-bold">
+          Task_Manager
+      </p>
+    </div>
+    <form id="forms" class="flex flex-col bg-white p-3 mt-10 w-[90vw] rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]">
+        <div class="flex items-center w-full p-2">
+          <label for="title" class="font-semibold">Task Title
+            <input type="text" id="title" name="title" class="p-2 border-b-2 border-gray-500 focus:outline-none w-[90%] shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]" placeholder="Enter Your Task Here . . ." required>
+          </label>
+        </div>
+        <section class="border-b-4 border-[#e7e7e7] w-full my-6 rounded-md"></section>
+        <div class="flex items-center w-full p-2">
+          <label for="desc" class="font-semibold">Task Description
+            <textarea id="desc" name="desc" class="p-2 border-b-2 border-gray-500 focus:outline-none w-[90%] resize-none rounded-md shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]" rows="5" cols="40" placeholder="Enter Your Description Here . . ." required></textarea>
+          </label>
+        </div>
+        <section class="border-b-4 border-[#e7e7e7] w-full my-6 rounded-md"></section>
+        <div class="flex items-center w-full p-2">
+          <label for="date" class="font-semibold">Date
+            <input type="date" id="date" name="date" class="p-2 border-b-2 border-gray-500 focus:outline-none w-[90%] shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem]" required>
+          </label>
+        </div>
+        <section class="border-b-4 border-[#e7e7e7] w-full my-6 rounded-md"></section>
+        <button type="submit" class="bg-gradient-to-r from-blue-600 to-green-400 text-white font-bold rounded-md">Submit</button>
+    </div>
+  </form>
+  <div id="tasks" class="flex flex-col bg-white p-3 mt-10 w-[90vw] rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0_1rem_1rem">
+    <p class="font-semibold text-3xl">Task List</p>
+    <section class="w-full border-solid border-black border-2 mt-1"></section>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
